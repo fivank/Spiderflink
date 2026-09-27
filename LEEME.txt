@@ -1,6 +1,6 @@
 SPIDERFLINK — CONFIGURACIÓN
 
-Abre index.html en el navegador.
+Sirve esta carpeta con un servidor web estático y abre index.html en el navegador.
 
 Menú oculto: toca cinco veces rápidamente a SpiderFlink en el inicio.
 
@@ -12,7 +12,9 @@ Práctica puede heredar Arcade o usar sus tres perfiles propios. «Copiar Arcade
 
 «Exportar JSON» descarga todos los perfiles y los cambios del borrador. Puedes compartir ese JSON para definir los valores por defecto de una futura versión. «Importar JSON» lo carga para revisar; «Guardar y volver» aplica los cambios.
 
-SpiderFlink-config-default.json contiene la configuración inicial de esta versión.
+SpiderFlink-config-default.json contiene la configuración inicial de esta versión. Se carga automáticamente y tiene prioridad sobre la configuración guardada en el navegador.
+
+La música against_the_rising_tide.mp3 comienza al iniciar una partida. Su volumen es bajo durante la acción y sube en el inicio, pausas, transiciones y final.
 PRUEBAS DIRECTAS
 
 En el menú oculto abre «Probar un nivel o un jefe». Elige el modo y la dificultad arriba y selecciona cualquier nivel del 1 al 30 o cualquiera de los diez jefes. Para un jefe puedes cambiar su nivel de referencia, que determina la dificultad del combate.
