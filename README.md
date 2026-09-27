@@ -4,7 +4,7 @@ Juego vertical para navegador, con 30 niveles, 10 jefes, tres dificultades y mod
 
 ## Jugar
 
-Abre `index.html` en un navegador. El juego contiene su propio código, estilos, dibujos y sonidos: no necesita instalar dependencias ni descargar recursos externos para jugar.
+Sirve la carpeta con un servidor web estático y abre `index.html`. El juego no necesita instalar dependencias ni descargar recursos externos: la configuración y la música se publican junto a la aplicación.
 
 - Toca para disparar.
 - Mantén y suelta para trepar por el mismo muro o saltar al otro.
@@ -32,13 +32,14 @@ El menú permite ajustar cada dificultad, configurar qué jefe aparece en cada n
 
 En «Probar un nivel o un jefe» puedes entrar directamente en cualquiera de los 30 niveles o los 10 jefes. Se usan los cambios del borrador, sin modificar los récords; puedes repetir o volver conservando los cambios pendientes.
 
-`SpiderFlink-config-default.json` contiene los valores iniciales y puede importarse desde ese menú. Importarlo requiere después guardar para aplicarlo; el juego no carga automáticamente ese archivo al arrancar. Los ajustes y récords se guardan en el navegador, por dirección web. Para llevar tus ajustes desde el archivo local a Netlify, expórtalos e impórtalos allí.
+`SpiderFlink-config-default.json` se carga automáticamente al arrancar y tiene prioridad sobre ajustes anteriores de `localStorage`. Así, la configuración publicada es siempre la que gobierna una nueva carga. Si el archivo no se puede solicitar (por ejemplo, al abrir `index.html` directamente con `file://`), el juego conserva como respaldo la configuración local o integrada. Los cambios guardados desde el menú se aplican a la sesión actual; exporta el JSON y reemplaza el archivo publicado para hacerlos permanentes.
 
 Los niveles 1, 4, 7 y 10 permiten comparar noche, amanecer, día y atardecer. La iluminación cambia gradualmente durante el ascenso.
 
 ## Archivos
 
-- `index.html`: juego completo, incluyendo gráficos y audio generados por código.
+- `index.html`: juego completo, incluyendo gráficos, efectos de sonido y control de la música.
+- `against_the_rising_tide.mp3`: música de fondo en bucle; suena más baja durante el juego y sube en menús, pausas e intermedios.
 - `netlify.toml`: configuración de publicación.
 - `SpiderFlink-config-default.json`: configuración inicial exportable.
 - `LEEME.txt`: instrucciones detalladas.

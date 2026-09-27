@@ -5,7 +5,7 @@
     "name": "SpiderFlink",
     "levels": 30
   },
-  "description": "Configuración completa. Nivel 0 = inicio; recompensas 1–30 = al completar el nivel. Cada nivel admite un jefe o null y varias recompensas. Para usarla como configuración por defecto, sustituye BUILTIN_DEFAULT_CONFIG por configs. Los ajustes ya guardados en un navegador tienen prioridad sobre los valores por defecto.",
+  "description": "Configuración completa. Nivel 0 = inicio; recompensas 1–30 = al completar el nivel. Cada nivel admite un jefe o null y varias recompensas. Al cargar la aplicación, este archivo tiene prioridad sobre los ajustes guardados en el navegador.",
   "catalogs": {
     "bosses": [
       {
