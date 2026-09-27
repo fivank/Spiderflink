@@ -1,0 +1,3644 @@
+{
+  "format": "spiderflink-config",
+  "schemaVersion": 3,
+  "game": {
+    "name": "SpiderFlink",
+    "levels": 30
+  },
+  "description": "Configuración completa. Nivel 0 = inicio; recompensas 1–30 = al completar el nivel. Cada nivel admite un jefe o null y varias recompensas. Para usarla como configuración por defecto, sustituye BUILTIN_DEFAULT_CONFIG por configs. Los ajustes ya guardados en un navegador tienen prioridad sobre los valores por defecto.",
+  "catalogs": {
+    "bosses": [
+      {
+        "id": "goliat",
+        "name": "Goliat"
+      },
+      {
+        "id": "avispa",
+        "name": "Avispa"
+      },
+      {
+        "id": "kraken",
+        "name": "Kraken"
+      },
+      {
+        "id": "nexo",
+        "name": "Nexo"
+      },
+      {
+        "id": "tejedor",
+        "name": "Tejedor"
+      },
+      {
+        "id": "prisma",
+        "name": "Prisma"
+      },
+      {
+        "id": "umbra",
+        "name": "Umbra"
+      },
+      {
+        "id": "eclipse",
+        "name": "Eclipse"
+      },
+      {
+        "id": "nemesis",
+        "name": "Némesis"
+      },
+      {
+        "id": "spider_malo",
+        "name": "Spider-Malo"
+      }
+    ],
+    "rewards": [
+      {
+        "id": "power",
+        "name": "Telaraña potente"
+      },
+      {
+        "id": "spread",
+        "name": "Disparo triple"
+      },
+      {
+        "id": "laser",
+        "name": "Láser solar"
+      },
+      {
+        "id": "heart",
+        "name": "Corazón extra"
+      },
+      {
+        "id": "trap",
+        "name": "Red atrapadora"
+      },
+      {
+        "id": "armor",
+        "name": "Armadura dorada"
+      },
+      {
+        "id": "pulse",
+        "name": "Salto de tormenta"
+      },
+      {
+        "id": "sense",
+        "name": "Sentido arácnido"
+      }
+    ]
+  },
+  "configs": {
+    "arcade": {
+      "easy": {
+        "campaign": {
+          "bosses": [
+            null,
+            null,
+            "goliat",
+            null,
+            null,
+            "avispa",
+            null,
+            null,
+            "kraken",
+            null,
+            null,
+            "nexo",
+            null,
+            null,
+            "tejedor",
+            null,
+            null,
+            "prisma",
+            null,
+            null,
+            "umbra",
+            null,
+            null,
+            "eclipse",
+            null,
+            null,
+            "nemesis",
+            null,
+            null,
+            "spider_malo"
+          ],
+          "rewards": [
+            [],
+            [],
+            [],
+            [
+              "power"
+            ],
+            [],
+            [],
+            [
+              "spread"
+            ],
+            [],
+            [],
+            [
+              "laser"
+            ],
+            [],
+            [],
+            [
+              "heart"
+            ],
+            [],
+            [],
+            [
+              "trap"
+            ],
+            [],
+            [],
+            [
+              "armor"
+            ],
+            [],
+            [],
+            [
+              "pulse"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              "sense"
+            ],
+            [],
+            [],
+            []
+          ]
+        },
+        "general": {
+          "scroll": 1,
+          "length": 1,
+          "density": 1,
+          "population": 18
+        },
+        "hero": {
+          "swing": 1,
+          "trapCharge": 1.45,
+          "dodge": 0.8,
+          "bulletSpeed": 1050,
+          "bulletSize": 4,
+          "bulletDamage": 1,
+          "laserDamage": 1,
+          "senseCooldown": 20
+        },
+        "enemies": {
+          "basic": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "heavy": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "ranged": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "veteran": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "climber": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "patrol": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "samurai": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "leaper": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          }
+        },
+        "bosses": [
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          }
+        ],
+        "stages": [
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          }
+        ]
+      },
+      "normal": {
+        "campaign": {
+          "bosses": [
+            null,
+            null,
+            "goliat",
+            null,
+            null,
+            "avispa",
+            null,
+            null,
+            "kraken",
+            null,
+            null,
+            "nexo",
+            null,
+            null,
+            "tejedor",
+            null,
+            null,
+            "prisma",
+            null,
+            null,
+            "umbra",
+            null,
+            null,
+            "eclipse",
+            null,
+            null,
+            "nemesis",
+            null,
+            null,
+            "spider_malo"
+          ],
+          "rewards": [
+            [],
+            [],
+            [],
+            [
+              "power"
+            ],
+            [],
+            [],
+            [
+              "spread"
+            ],
+            [],
+            [],
+            [
+              "laser"
+            ],
+            [],
+            [],
+            [
+              "heart"
+            ],
+            [],
+            [],
+            [
+              "trap"
+            ],
+            [],
+            [],
+            [
+              "armor"
+            ],
+            [],
+            [],
+            [
+              "pulse"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              "sense"
+            ],
+            [],
+            [],
+            []
+          ]
+        },
+        "general": {
+          "scroll": 1,
+          "length": 1,
+          "density": 1,
+          "population": 18
+        },
+        "hero": {
+          "swing": 1,
+          "trapCharge": 1.45,
+          "dodge": 0.8,
+          "bulletSpeed": 1050,
+          "bulletSize": 4,
+          "bulletDamage": 1,
+          "laserDamage": 1,
+          "senseCooldown": 20
+        },
+        "enemies": {
+          "basic": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "heavy": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "ranged": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "veteran": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "climber": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "patrol": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "samurai": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "leaper": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          }
+        },
+        "bosses": [
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          }
+        ],
+        "stages": [
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          }
+        ]
+      },
+      "hard": {
+        "campaign": {
+          "bosses": [
+            null,
+            null,
+            "goliat",
+            null,
+            null,
+            "avispa",
+            null,
+            null,
+            "kraken",
+            null,
+            null,
+            "nexo",
+            null,
+            null,
+            "tejedor",
+            null,
+            null,
+            "prisma",
+            null,
+            null,
+            "umbra",
+            null,
+            null,
+            "eclipse",
+            null,
+            null,
+            "nemesis",
+            null,
+            null,
+            "spider_malo"
+          ],
+          "rewards": [
+            [],
+            [],
+            [],
+            [
+              "power"
+            ],
+            [],
+            [],
+            [
+              "spread"
+            ],
+            [],
+            [],
+            [
+              "laser"
+            ],
+            [],
+            [],
+            [
+              "heart"
+            ],
+            [],
+            [],
+            [
+              "trap"
+            ],
+            [],
+            [],
+            [
+              "armor"
+            ],
+            [],
+            [],
+            [
+              "pulse"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              "sense"
+            ],
+            [],
+            [],
+            []
+          ]
+        },
+        "general": {
+          "scroll": 1,
+          "length": 1,
+          "density": 1,
+          "population": 18
+        },
+        "hero": {
+          "swing": 1,
+          "trapCharge": 1.45,
+          "dodge": 0.8,
+          "bulletSpeed": 1050,
+          "bulletSize": 4,
+          "bulletDamage": 1,
+          "laserDamage": 1,
+          "senseCooldown": 20
+        },
+        "enemies": {
+          "basic": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "heavy": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "ranged": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "veteran": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "climber": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "patrol": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "samurai": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          "leaper": {
+            "jumpDelay": 5,
+            "health": 1,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 1,
+            "fireGrowth": 0.08,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          }
+        },
+        "bosses": [
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          },
+          {
+            "trapDuration": 7,
+            "senseCooldown": 20,
+            "health": 1,
+            "moveSpeed": 1,
+            "moveRandom": 0,
+            "firstDelay": 1,
+            "fireInterval": 1,
+            "fireRandom": 0,
+            "fireGrowth": 1,
+            "rageAt": 0.5,
+            "rageInterval": 0.75,
+            "spread": 1,
+            "bulletSpeed": 1,
+            "bulletSize": 4,
+            "bulletDamage": 1
+          }
+        ],
+        "stages": [
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          },
+          {
+            "length": 1,
+            "scroll": 1,
+            "enemyFire": 1,
+            "enemyMove": 1,
+            "bossHealth": 1
+          }
+        ]
+      }
+    },
+    "practice": {
+      "inheritArcade": true,
+      "damageEnabled": false,
+      "autoScroll": false,
+      "profiles": {
+        "easy": {
+          "campaign": {
+            "bosses": [
+              null,
+              null,
+              "goliat",
+              null,
+              null,
+              "avispa",
+              null,
+              null,
+              "kraken",
+              null,
+              null,
+              "nexo",
+              null,
+              null,
+              "tejedor",
+              null,
+              null,
+              "prisma",
+              null,
+              null,
+              "umbra",
+              null,
+              null,
+              "eclipse",
+              null,
+              null,
+              "nemesis",
+              null,
+              null,
+              "spider_malo"
+            ],
+            "rewards": [
+              [],
+              [],
+              [],
+              [
+                "power"
+              ],
+              [],
+              [],
+              [
+                "spread"
+              ],
+              [],
+              [],
+              [
+                "laser"
+              ],
+              [],
+              [],
+              [
+                "heart"
+              ],
+              [],
+              [],
+              [
+                "trap"
+              ],
+              [],
+              [],
+              [
+                "armor"
+              ],
+              [],
+              [],
+              [
+                "pulse"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                "sense"
+              ],
+              [],
+              [],
+              []
+            ]
+          },
+          "general": {
+            "scroll": 1,
+            "length": 1,
+            "density": 1,
+            "population": 18
+          },
+          "hero": {
+            "swing": 1,
+            "trapCharge": 1.45,
+            "dodge": 0.8,
+            "bulletSpeed": 1050,
+            "bulletSize": 4,
+            "bulletDamage": 1,
+            "laserDamage": 1,
+            "senseCooldown": 20
+          },
+          "enemies": {
+            "basic": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "heavy": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "ranged": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "veteran": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "climber": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "patrol": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "samurai": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "leaper": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            }
+          },
+          "bosses": [
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            }
+          ],
+          "stages": [
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            }
+          ]
+        },
+        "normal": {
+          "campaign": {
+            "bosses": [
+              null,
+              null,
+              "goliat",
+              null,
+              null,
+              "avispa",
+              null,
+              null,
+              "kraken",
+              null,
+              null,
+              "nexo",
+              null,
+              null,
+              "tejedor",
+              null,
+              null,
+              "prisma",
+              null,
+              null,
+              "umbra",
+              null,
+              null,
+              "eclipse",
+              null,
+              null,
+              "nemesis",
+              null,
+              null,
+              "spider_malo"
+            ],
+            "rewards": [
+              [],
+              [],
+              [],
+              [
+                "power"
+              ],
+              [],
+              [],
+              [
+                "spread"
+              ],
+              [],
+              [],
+              [
+                "laser"
+              ],
+              [],
+              [],
+              [
+                "heart"
+              ],
+              [],
+              [],
+              [
+                "trap"
+              ],
+              [],
+              [],
+              [
+                "armor"
+              ],
+              [],
+              [],
+              [
+                "pulse"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                "sense"
+              ],
+              [],
+              [],
+              []
+            ]
+          },
+          "general": {
+            "scroll": 1,
+            "length": 1,
+            "density": 1,
+            "population": 18
+          },
+          "hero": {
+            "swing": 1,
+            "trapCharge": 1.45,
+            "dodge": 0.8,
+            "bulletSpeed": 1050,
+            "bulletSize": 4,
+            "bulletDamage": 1,
+            "laserDamage": 1,
+            "senseCooldown": 20
+          },
+          "enemies": {
+            "basic": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "heavy": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "ranged": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "veteran": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "climber": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "patrol": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "samurai": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "leaper": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            }
+          },
+          "bosses": [
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            }
+          ],
+          "stages": [
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            }
+          ]
+        },
+        "hard": {
+          "campaign": {
+            "bosses": [
+              null,
+              null,
+              "goliat",
+              null,
+              null,
+              "avispa",
+              null,
+              null,
+              "kraken",
+              null,
+              null,
+              "nexo",
+              null,
+              null,
+              "tejedor",
+              null,
+              null,
+              "prisma",
+              null,
+              null,
+              "umbra",
+              null,
+              null,
+              "eclipse",
+              null,
+              null,
+              "nemesis",
+              null,
+              null,
+              "spider_malo"
+            ],
+            "rewards": [
+              [],
+              [],
+              [],
+              [
+                "power"
+              ],
+              [],
+              [],
+              [
+                "spread"
+              ],
+              [],
+              [],
+              [
+                "laser"
+              ],
+              [],
+              [],
+              [
+                "heart"
+              ],
+              [],
+              [],
+              [
+                "trap"
+              ],
+              [],
+              [],
+              [
+                "armor"
+              ],
+              [],
+              [],
+              [
+                "pulse"
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [
+                "sense"
+              ],
+              [],
+              [],
+              []
+            ]
+          },
+          "general": {
+            "scroll": 1,
+            "length": 1,
+            "density": 1,
+            "population": 18
+          },
+          "hero": {
+            "swing": 1,
+            "trapCharge": 1.45,
+            "dodge": 0.8,
+            "bulletSpeed": 1050,
+            "bulletSize": 4,
+            "bulletDamage": 1,
+            "laserDamage": 1,
+            "senseCooldown": 20
+          },
+          "enemies": {
+            "basic": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "heavy": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "ranged": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "veteran": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "climber": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "patrol": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "samurai": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            "leaper": {
+              "jumpDelay": 5,
+              "health": 1,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 1,
+              "fireGrowth": 0.08,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            }
+          },
+          "bosses": [
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            },
+            {
+              "trapDuration": 7,
+              "senseCooldown": 20,
+              "health": 1,
+              "moveSpeed": 1,
+              "moveRandom": 0,
+              "firstDelay": 1,
+              "fireInterval": 1,
+              "fireRandom": 0,
+              "fireGrowth": 1,
+              "rageAt": 0.5,
+              "rageInterval": 0.75,
+              "spread": 1,
+              "bulletSpeed": 1,
+              "bulletSize": 4,
+              "bulletDamage": 1
+            }
+          ],
+          "stages": [
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            },
+            {
+              "length": 1,
+              "scroll": 1,
+              "enemyFire": 1,
+              "enemyMove": 1,
+              "bossHealth": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

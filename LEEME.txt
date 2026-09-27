@@ -1,0 +1,32 @@
+SPIDERFLINK — CONFIGURACIÓN
+
+Abre index.html en el navegador.
+
+Menú oculto: toca cinco veces rápidamente a SpiderFlink en el inicio.
+
+En «Jefes y recompensas» elige un nivel. 0 entrega poderes al inicio; 1–30 los entregan al completar ese nivel. Puedes marcar varias recompensas o todas. Un poder ya obtenido no vuelve a acumularse. Cada nivel admite un jefe, que también puede repetirse en otros niveles, o «Sin jefe».
+
+«Copiar recompensas a varios niveles» acepta listas y rangos, por ejemplo 0, 3, 6-12 o todos.
+
+Práctica puede heredar Arcade o usar sus tres perfiles propios. «Copiar Arcade y personalizar» copia los ajustes antes de editarlos. Las opciones de daño y avance automático se configuran por separado.
+
+«Exportar JSON» descarga todos los perfiles y los cambios del borrador. Puedes compartir ese JSON para definir los valores por defecto de una futura versión. «Importar JSON» lo carga para revisar; «Guardar y volver» aplica los cambios.
+
+SpiderFlink-config-default.json contiene la configuración inicial de esta versión.
+PRUEBAS DIRECTAS
+
+En el menú oculto abre «Probar un nivel o un jefe». Elige el modo y la dificultad arriba y selecciona cualquier nivel del 1 al 30 o cualquiera de los diez jefes. Para un jefe puedes cambiar su nivel de referencia, que determina la dificultad del combate.
+
+La prueba usa los ajustes que estás editando, aunque todavía no los hayas guardado. Puedes entrar con los poderes que se obtienen antes de ese nivel, con todos los poderes o solo con los configurados en el inicio. Empiezas con vida y escudo completos, si tienes armadura.
+
+Durante la prueba, ↻ repite el mismo objetivo y «Ajustes» vuelve al menú conservando el borrador. Al derrotar a un jefe de prueba puedes repetirlo directamente. Una prueba de nivel permite seguir avanzando para comprobar las transiciones. Las pruebas no modifican los récords.
+
+Al volver, «Guardar y volver» aplica tus cambios. Cerrar sin guardar descarta el borrador.
+
+MEJORAS VISUALES
+
+Traje azul intenso y celeste inspirado en el dibujo, con araña negra más grande. La armadura sigue conservando su brillo dorado. Telarañas grises y celestes con varios hilos y red en el punto de anclaje. Láser amarillo fluorescente más grueso: sale de la mano y avanza hasta el objetivo en aproximadamente una décima de segundo; el daño sigue su avance.
+
+El entorno cambia gradualmente: noche, amanecer, día y atardecer. Los niveles 1, 4, 7 y 10 sirven para comparar las cuatro atmósferas desde las pruebas del menú oculto; el ciclo se repite cada 12 niveles. Los edificios y las ventanas acompañan el cambio de luz.
+
+Civiles de tres tipos: niña, hombre y anciano; conservan sus reacciones de sorpresa y alegría. Enemigos y jefes mantienen su identidad con más detalles en armaduras y superficies.

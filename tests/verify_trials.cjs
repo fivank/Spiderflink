@@ -1,0 +1,27 @@
+const assert=require('assert/strict');
+const {game}=require('./game-harness.cjs');
+function configure(g,kind='level',n=1,gear='progression',boss='goliat'){
+ g.node('trialKind').value=kind;g.node('trialLevel').value=String(n);g.node('trialGear').value=gear;g.node('trialBoss').value=boss;
+}
+function endBoss(g){g.run('defeatBoss()');for(let i=0;i<180&&g.run("state!=='reward'");i++)g.run("if(state==='bossdefeat')updateBossDeath(.025);else if(state==='celebrating')updateCelebration(.025)");assert.equal(g.run('state'),'reward');}
+{
+ const g=game(),r=g.run,before=JSON.stringify([...g.storage]);r("openTuning();labDifficulty='normal';labDraft.normal.general.scroll=1.5;labDraft.normal.stages[28].length=1.5;$('tuningSection').value='stage';renderTuning(true);$('tuningTarget').value='28';renderTuning()");const draft=r('JSON.stringify(labDraft)'),saved=r('JSON.stringify(tuning)');configure(g,'level',29);g.node('trialLaunch').onclick();assert.equal(r('level'),29);assert.equal(r('difficulty'),'normal');assert.equal(r('tune().general.scroll'),1.5);assert.equal(r('stageTune().length'),1.5);assert.equal(r('health'),6);assert.equal(r('shield'),2);assert.equal(r('upgrades.sense'),1);assert.equal(r('boss'),null);assert(r('enemies.length>0'));assert.equal(g.node('trialBar').hidden,false);
+ r('enemies=[];nextRow=p.y-150;spawn(-3000)');assert(r('enemies.some(e=>e.samurai)'));assert(r('enemies.some(e=>e.leaper)'));
+ r("points=999999;showGameOver('test')");assert.equal(JSON.stringify([...g.storage]),before);g.node('retry').onclick();assert.equal(r('level'),29);assert.equal(r('points'),0);assert.equal(r('state'),'playing');assert.equal(r('playerDeath'),null);g.node('trialReturn').onclick();assert.equal(r('state'),'tuning');assert.equal(r('difficulty'),'hard');assert.equal(r('JSON.stringify(tuning)'),saved);assert.equal(r('JSON.stringify(labDraft)'),draft);assert.equal(g.node('tuningTarget').value,'28');assert.equal(g.node('tuningSection').value,'stage');assert.equal(g.node('trialLevel').value,'29');assert.equal(JSON.stringify([...g.storage]),before);r('saveTuning()');assert.equal(r('tuning.normal.general.scroll'),1.5);assert(g.storage.size>0);r('start()');assert.equal(r('level'),1);assert.equal(r('trialSession'),null);
+ console.log('Level 29 uses draft difficulty/stage/enemies; retry, record isolation, draft restoration and later save OK');
+}
+for(const reduced of [false,true]){
+ const g=game(reduced),r=g.run;r('openTuning()');const ids=r('[...BOSS_IDS]');for(let i=0;i<ids.length;i++){
+  r(`labDraft.hard.campaign.bosses[1]=null;labDraft.hard.bosses[${i}].health=1.5;labDraft.hard.bosses[${i}].firstDelay=2`);configure(g,'boss',i===9?30:2,'initial',ids[i]);g.node('trialLaunch').onclick();assert.equal(r('boss.tuningIndex'),i);assert.equal(r('bossTune().health'),1.5);assert.equal(r('enemies.length+obstacles.length'),0);const hp=r('boss.maxHp');r('boss=null;beginBoss('+i+')');assert.equal(r('boss.maxHp'),hp);assert(r('boss.fire>3'));r('update(.016);draw()');endBoss(g);assert.equal(g.node('rewardTag').textContent,'PRUEBA COMPLETADA');assert.equal(g.node('nextLabel').textContent,'REPETIR JEFE');assert.equal(r('upgrades.trap'),0);g.node('nextLevel').onclick();assert.equal(r('state'),'playing');assert.equal(r('boss.tuningIndex'),i);assert.equal(r('boss.maxHp'),hp);assert.equal(r('level'),i===9?30:2);r('defeatBoss();home()');assert.equal(r('state'),'tuning');assert.equal(r('bossDeath'),null);
+ }
+ assert.equal(g.storage.size,0);console.log(`All 10 direct bosses (reduced motion ${reduced}): forced tuning, completion including level 30, repeat and exit during destruction OK`);
+}
+{
+ const g=game(),r=g.run;r("openTuning();labDraft.hard.campaign.rewards[0]=['laser'];labDraft.hard.campaign.rewards[2]=['trap'];labDraft.hard.campaign.rewards[3]=['sense']");
+ for(const [gear,trap,sense] of [['progression',1,0],['initial',0,0],['all',1,1]]){configure(g,'level',3,gear);g.node('trialLaunch').onclick();assert.equal(r('upgrades.laser'),1);assert.equal(r('upgrades.trap'),trap);assert.equal(r('upgrades.sense'),sense);if(gear==='all'){assert(r('REWARD_IDS.every(k=>upgrades[k]>0)'));assert.equal(r('health'),6);}r('home()');}
+ r("labMode='practice';labDifficulty='easy';labDraft.easy.hero.bulletDamage=2;labDraft.practice.profiles.easy.hero.bulletDamage=3");configure(g,'level',7);g.node('trialLaunch').onclick();assert.equal(r('mode'),'practice');assert.equal(r('tune().hero.bulletDamage'),2);assert.equal(r('damageEnabled()'),false);r('home();labDraft.practice.inheritArcade=false;labDraft.practice.damageEnabled=true;labDraft.practice.autoScroll=true');g.node('trialLaunch').onclick();assert.equal(r('tune().hero.bulletDamage'),3);assert(r('damageEnabled()'));assert(r('autoScrollEnabled()'));r('pauseGame()');g.node('quit').onclick();assert.equal(r('state'),'tuning');assert.equal(r('mode'),'arcade');r('closeTuning();start()');assert.equal(r('level'),1);assert.equal(r('upgrades.laser'),0);console.log('Loadout boundaries, all powers, practice inheritance/independence, pause return and cancelling draft OK');
+}
+{
+ const g=game(),r=g.run;r('openTuning()');configure(g,'level',31);g.node('trialLaunch').onclick();assert.equal(r('state'),'tuning');configure(g,'boss',3,'all','unknown');g.node('trialLaunch').onclick();assert.equal(r('state'),'tuning');configure(g);g.node('tuningForm').reportValidity=()=>false;g.node('trialLaunch').onclick();assert.equal(r('trialSession'),null);console.log('Invalid targets and invalid form never start a trial');
+}
+console.log('All trial checks passed');

@@ -1,0 +1,4 @@
+# Juego estático: index.html ya está listo para publicar.
+[build]
+  publish = "."
+  command = ""

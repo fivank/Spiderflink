@@ -1,0 +1,13 @@
+{
+  "name": "spiderflink-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pruebas de SpiderFlink; no se necesitan para publicar ni jugar.",
+  "scripts": {
+    "test": "node verify_30.cjs && node verify_campaign.cjs && node verify_trials.cjs && node verify_visuals.cjs",
+    "benchmark": "node benchmark_game.cjs"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  }
+}
